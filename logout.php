@@ -2,6 +2,6 @@
 session_start();
 session_unset();
 session_destroy();
-header("Location: login.php");
+
+echo "<script>alert('Anda telah keluar.'); window.location.href='login.php';</script>";
 exit;
-?>
